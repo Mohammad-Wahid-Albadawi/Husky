@@ -1,8 +1,4 @@
-<script setup lang="ts">
-import { something } from './not-exist';
-
-products = [];
-</script>
+<script se></script>
 
 <template>
   <div id="nav">
