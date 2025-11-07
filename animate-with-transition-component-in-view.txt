@@ -1,0 +1,100 @@
+--- first we have transition component 
+
+
+
+1)  single transition
+
+1-we have this classes to animate
+
+.enter-from {} 
+.enter-to{} 
+.enter-active {}
+
+.leave-from {}
+.leave-to {}
+.leave-active {}
+
+
+if i write name to transition
+
+classes >>> .name-enter-from {} ...
+
+
+2- we can replacing from and to , and write animation in the active
+Example : .name-enter-active {
+animation : name time s ..;
+}
+
+@keyframes name {
+0% {}
+50% {}
+100% {}
+} 
+
+
+
+2) group transition
+i replace parent with    transition-group component then i set tag='what it is' , note : tag='ul' 
+
+then i write classes
+.enter-from {}
+.enter....
+
+
+3) appear in transition group
+
+when i render the page or refresh it my animation not working in the list , if i want it to working
+i write appear in transiiotn group tag
+
+4) .move  , also in transition group 
+
+when i run animte on element add or remove , the elements doesn't animte to jump
+if i want animte it also 
+i use .name-move {
+transition : }
+
+note : if it doesn't work i should give position absolute to the child
+
+
+
+5) i can use transition group in transition 
+
+explain : if i transition ul and i want to transition something with ul 
+
+i can use transition for both transition group and something else
+and use classes with name for each transition
+
+
+note : for doesn't oopsite i can use mode 
+mode = 'out-in'
+mode= 'in-out'
+
+
+6) functions in the dom 
+i have for each element functions call 
+@before-enter   enter   after-enter 
+before-leave    leave   after-leave
+
+i can watch element animte in every mill seconds and controll it with function
+i can pass el for each function , el is the element i animate it 
+
+7) GSAP library 
+
+i can replace this functions by using just 
+gsap.set() in before enter 
+& gsap.to() in enter
+gsap.name(el,{
+    duration : ,
+    delay : ,
+    y , x , opacit ...
+    
+
+})
+
+and in gsap.to (el,{
+    ...,
+    onComplete : done,
+})
+i get done from params function
+
+this done prevent after enter run in animate , and it is wait to finish my animate
