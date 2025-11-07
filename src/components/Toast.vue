@@ -1,7 +1,8 @@
 <script setup lang="ts">
 const a = 3;
+const text = 'welcome to wahid workshop';
 if (a === 3) {
-  console.log(a, 'sfds');
+  console.log(`a = ${a}`);
 }
 </script>
 <template>
