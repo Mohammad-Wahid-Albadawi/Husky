@@ -5,11 +5,11 @@ if (a === 3) {
   console.log(`a = ${a}`);
 }
 </script>
-<templaterrrrrrrrrrrrrrrrrrrre>
+<template>
   <div class="toast-wrapper">
     <div class="toast">You must enter a value for the todo</div>
   </div>
-</templaterrrrrrrrrrrrrrrrrrrre>
+</template>
 
 <style>
 .toast-wrapper {
