@@ -1,5 +1,9 @@
-<script setup lang="ts"></script>
-
+<script setup lang="ts">
+const a = 3;
+if (a == 3) {
+  console.log(a);
+}
+</script>
 <template>
   <div class="toast-wrapper">
     <div class="toast">You must enter a value for the todo</div>
