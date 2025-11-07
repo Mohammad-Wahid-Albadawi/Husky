@@ -1,4 +1,9 @@
-<script setup></script>
+<script setup lang="ts">
+const a: boolean = 33;
+if (a === true) {
+  b = '33';
+}
+</script>
 
 <template>
   <div id="nav">
