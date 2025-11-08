@@ -15,7 +15,7 @@ if (a === 3) {
 .toast-wrapper {
   position: fixed;
   top: 20px;
-  width: 100%;
+  /* width: 100%; */
 }
 .toast {
   padding: 20px;
